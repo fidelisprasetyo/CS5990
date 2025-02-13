@@ -43,7 +43,7 @@ for doc in documents:
    doc_matrix = [0] * len(termsIndex)
    words = doc[1].split()
    for word in words:
-      doc_matrix[termsIndex[word]] += 1
+      doc_matrix[termsIndex[word]] = 1
    docTermMatrix.append(doc_matrix)
 
 # Compare the pairwise cosine similarities and store the highest one
