@@ -76,7 +76,7 @@ for ds in dataSets:
 
         #plotting the decision tree
         tree.plot_tree(clf, feature_names=['Refund', 'Single', 'Divorced', 'Married', 'Taxable Income'], class_names=['Yes','No'], filled=True, rounded=True)
-        #plt.show()
+        plt.show()
 
         #read the test data and add this data to data_test NumPy
         df = pd.read_csv('cheat_data.csv', sep=',', header=0)
